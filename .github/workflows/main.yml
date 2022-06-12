@@ -78,18 +78,18 @@ jobs:
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-misc.json
           
           # 8125网卡（2.5G）
-          ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/raw/master/r8168/rpext-index.json
+          ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/raw/main/r8168/rpext-index.json
           # 8168网卡（兼容8111?）
-          ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/raw/master/r8168/rpext-index.json
+          ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/raw/main/r8168/rpext-index.json
           # VMware Vmxnet3 虚拟网卡驱动
-          #./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/raw/master/vmxnet3/rpext-index.json
+          #./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/raw/main/vmxnet3/rpext-index.json
           
           # 918-42218, Enables agetty service for further troubleshooting during install
-          ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/raw/master/raspbi-pill/rpext-index.json
+          ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/raw/main/raspbi-pill/rpext-index.json
           # Executes and collects TCRP DIAG Information on an html format for easier sharing
-          ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/raw/master/tcrp-diag/rpext-index.json
+          ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/raw/main/tcrp-diag/rpext-index.json
           # Enables telnet service for further troubleshooting during install
-          ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/raw/master/early-telnet/rpext-index.json
+          ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/raw/main/early-telnet/rpext-index.json
       - name: 编译引导镜像
         run: |
           ./redpill_tool_chain.sh auto ${{matrix.platform}}-${{matrix.version}}
